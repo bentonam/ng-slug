@@ -1,0 +1,26 @@
+{
+    "name": "ng-slug",
+    "version": "0.0.1",
+    "description": "AngularJS factory to generate friendly slugs from strings.",
+    "author": {
+        "name": "Aaron Benton"
+    },
+    "devDependencies": {
+        "gulp": "^3.5.6",
+        "gulp-uglify": "^1.2.0",
+		"gulp-rename": "^1.2.0",
+        "bower": "^1.3.3"
+    },
+    "keywords": [
+        "angularjs",
+        "slug",
+        "url",
+        "rewrite",
+        "seo"
+    ],
+    "license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/bentonam/ng-slug.git"
+	}
+}

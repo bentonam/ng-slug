@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="" ng-app="exampleApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="../src/ng-slug.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body ng-controller="AppCtrl">
+<div class="row padding">
+	<form class="form-horizontal col-md-5 col-md-offset-1">
+		<legend>Slug Example</legend>
+		<p>Type your input below to see the generated slug.</p>
+		<div class="form-group">
+			<label for="demo">Input String</label>
+			<input id="demo" name="demo" type="text" class="form-control" required ng-model="input" ng-change="slugIt()">
+			<p class="help-block">The string to generate the slug for</p>
+		</div>
+		<div class="form-group">
+			<label for="remove">Remove String</label>
+			<input id="remove" name="remove" type="text" class="form-control" required ng-model="remove" ng-change="slugIt()">
+			<p class="help-block">An additional string or RegEx to apply to the input string</p>
+		</div>
+		<div class="form-group">
+			<label>Allow Duplicates? <input type="checkbox" name="allowed" ng-model="dups" ng-init="checked=dups" ng-true-value="true" ng-false-value="false" ng-change="slugIt()"></label>
+			<p class="help-block">Whether or not duplicate strings are allowed in the slug</p>
+		</div>
+		<div class="form-group">
+			<label for="slug">Generated Slug: </label>
+			<input id="slug" name="slug" type="text" class="form-control" value="{{slug}}" readonly>
+		</div>
+	</form>
+</div>
+</body>
+</html>
