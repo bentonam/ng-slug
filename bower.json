@@ -1,0 +1,28 @@
+{
+  "name": "ng-slug",
+  "main": "./dist/ng-slug.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bentonam/ng-slug",
+  "authors": [
+    "Aaron Benton"
+  ],
+  "description": "AngularJS factory to generate friendly slugs from strings.",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "angularjs",
+	"slug",
+	"url",
+	"rewrite",
+	"seo"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
